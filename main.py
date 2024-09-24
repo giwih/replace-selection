@@ -39,6 +39,9 @@ class MainWindow(QMainWindow):
 		self.move_frame.mousePressEvent = self.mousePressEvent1
 		self.move_frame.mouseMoveEvent = self.mouseMoveEvent1
 
+		self.color_picker_button_1.clicked.connect(self.colorPick)
+		self.color_picker_button_2.clicked.connect(self.colorPick2)
+
 
     #moving if the cursor is taken over move_frame
 	def mousePressEvent1(self, event):
@@ -86,6 +89,17 @@ class MainWindow(QMainWindow):
 				wrg.CloseKey(self.key)
 			self.question_msg() #call a message box about applying the settings
 
+	def colorPick(self):
+		color = QColorDialog.getColor()
+		if color.isValid():
+			rgb_string = f"{color.red()}, {color.green()}, {color.blue()}"
+			self.bsic_c.setText(rgb_string)
+
+	def colorPick2(self):
+		color = QColorDialog.getColor()
+		if color.isValid():
+			rgb_string = f"{color.red()}, {color.green()}, {color.blue()}"
+			self.border_c.setText(rgb_string)
 
 	def question_msg(self):
 		#messagebox
