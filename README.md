@@ -3,10 +3,10 @@ Change selection color windows 10/11
 
 <h2> 📛 Information</h2>
 
-![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/one.jpg)
+![first](pictures\one.jpg)
 <h4> enter colors in rgb format, and press refresh if you want to see how it will look, and press apply</h2>
 
-![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/two.jpg)
+![first](pictures\two.jpg)
 <h4>next you will show the following:</h4>
 
 ![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/three.jpg)
