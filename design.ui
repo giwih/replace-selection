@@ -29,10 +29,7 @@
     <string notr="true">background-color:#202020;</string>
    </property>
    <property name="frameShape">
-    <enum>QFrame::Shape::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Shadow::Raised</enum>
+    <enum>QFrame::NoFrame</enum>
    </property>
    <widget class="QLabel" name="CS">
     <property name="geometry">
@@ -256,10 +253,7 @@ QLineEdit:hover{
 border: 1px solid rgb(0, 120, 215);</string>
    </property>
    <property name="frameShape">
-    <enum>QFrame::Shape::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Shadow::Raised</enum>
+    <enum>QFrame::NoFrame</enum>
    </property>
    <widget class="QLabel" name="CS_2">
     <property name="geometry">
@@ -322,7 +316,7 @@ QPushButton:hover{
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>251</width>
+     <width>271</width>
      <height>31</height>
     </rect>
    </property>
@@ -331,17 +325,14 @@ QPushButton:hover{
 border-radius:10px;</string>
    </property>
    <property name="frameShape">
-    <enum>QFrame::Shape::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Shadow::Raised</enum>
+    <enum>QFrame::NoFrame</enum>
    </property>
    <widget class="QLabel" name="CS_3">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>241</width>
+      <width>261</width>
       <height>31</height>
      </rect>
     </property>
@@ -351,7 +342,7 @@ border-radius:10px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size:10px;
+     <string notr="true">font-size:12px;
 color:#fff;</string>
     </property>
     <property name="text">
@@ -369,19 +360,19 @@ color:#fff;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);</string>
+    <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>pictures/color_icon.png</normaloff>pictures/color_icon.png</iconset>
+     <normaloff>color_icon.png</normaloff>color_icon.png</iconset>
    </property>
    <property name="iconSize">
     <size>
-     <width>32</width>
-     <height>32</height>
+     <width>20</width>
+     <height>20</height>
     </size>
    </property>
   </widget>
@@ -389,9 +380,9 @@ color:#fff;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>210</y>
-     <width>281</width>
-     <height>21</height>
+     <y>201</y>
+     <width>421</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -407,7 +398,7 @@ color:#fff;</string>
     <string>*Notice: when applying a theme you will be thrown out of the windows session</string>
    </property>
    <property name="textFormat">
-    <enum>Qt::TextFormat::PlainText</enum>
+    <enum>Qt::PlainText</enum>
    </property>
    <property name="margin">
     <number>0</number>
@@ -423,14 +414,20 @@ color:#fff;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);</string>
+    <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>pictures/color_icon.png</normaloff>pictures/color_icon.png</iconset>
+     <normaloff>color_icon.png</normaloff>color_icon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
    </property>
   </widget>
   <zorder>notice_2</zorder>
@@ -440,10 +437,10 @@ color:#fff;</string>
   <zorder>dfl_btn</zorder>
   <zorder>border_c</zorder>
   <zorder>refresh_frame</zorder>
-  <zorder>refresh</zorder>
   <zorder>color_picker_button_1</zorder>
   <zorder>label</zorder>
   <zorder>color_picker_button_2</zorder>
+  <zorder>refresh</zorder>
  </widget>
  <resources/>
  <connections/>

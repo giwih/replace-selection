@@ -1,8 +1,6 @@
 # Replace-selection
 Change selection color windows 10/11
 
-<h2> 💥 Warning</h2>
-<h3>for the .EXE version you MUST need design.ui</h3>
 <h2> 📛 Information</h2>
 
 ![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/one.jpg)

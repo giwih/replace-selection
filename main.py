@@ -4,9 +4,9 @@ import re
 import winreg as wrg
 
 import ctypes
-from PyQt6 import uic, QtGui
-from PyQt6.QtWidgets import *
-from PyQt6.QtCore import *
+from PyQt6 import uic, QtGui, QtCore
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QMessageBox, QColorDialog, QMainWindow, QApplication
 
 
 class MainWindow(QMainWindow):
@@ -15,8 +15,10 @@ class MainWindow(QMainWindow):
 		super(MainWindow, self).__init__()
 		uic.loadUi('design.ui', self)
 		self.setFixedSize(513, 234)#600, 280
-		self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
-		QCoreApplication.setLibraryPaths(["qt.conf"])
+		self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
+		self.setWindowTitle("RP")
+		self.setWindowIcon(QIcon('icon.ico'))
+		# QCoreApplication.setLibraryPaths(["qt.conf"])
 
 		#init winreg
 		self.location = wrg.HKEY_CURRENT_USER 
