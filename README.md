@@ -9,7 +9,7 @@ Change selection color windows 10/11
 ![first](pictures/two.jpg)
 <h4>next you will show the following:</h4>
 
-![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/three.jpg)
+![three](pictures/three.jpg)
 <h4>Next, you’ll kick Windows out of the session, and you’re done!</h4>
 
-![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/result_one.jpg) ![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/result_two.jpg) ![Image alt](https://github.com/giwih/replace-selection/blob/main/pictures/result_3.jpg) 
+![result0](pictures/result_one.jpg) ![result1](pictures/result_two.jpg) ![result2](pictures/result_three.jpg) 
