@@ -1,19 +1,21 @@
 import sys
-import webbrowser
+from pathlib import Path
+import ctypes
 import re
 import winreg as wrg
 
-import ctypes
+import webbrowser
 from PyQt6 import uic, QtGui, QtCore
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QMessageBox, QColorDialog, QMainWindow, QApplication
-
 
 class MainWindow(QMainWindow):
 	def __init__(self):
 		#init
 		super(MainWindow, self).__init__()
-		uic.loadUi('design.ui', self)
+		bundle_dir = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+		uic.loadUi(bundle_dir/'design.ui', self)
+
 		self.setFixedSize(513, 234)#600, 280
 		self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
 		self.setWindowTitle("RP")
